@@ -1,0 +1,49 @@
+body{
+  background-color: #ededed;
+}
+.our-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.wrap {
+  text-align: center;
+  padding: 1rem;
+}
+
+.wrap > img{
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-10px);
+        transform: scale(1.1);
+        border-radius: 10%;
+        transition:0.4s all ease-out;
+        
+    }
+}
+
+.buttonPerv{
+  position: relative;
+  left: 5%;
+  padding: 8px 25px 8px 25px;
+}
+
+.buttonNext{
+  float: right;
+  position: relative;
+  right: 5%;
+}
+
+.center{
+  text-align: center;
+  margin: 10px;
+}
+
+.form-select{
+  width: unset;
+  margin: auto;
+}
