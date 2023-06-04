@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+Homework will prove your programming abilities. The code in the application should be
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+following these criteria: comments in code, clean, flexible and scalable code.
 
-## Available Scripts
+● Open a new React js project.
 
-In the project directory, you can run:
+● Create a store using Redux.
 
-### `npm start`
+● Before the App.js render you need to make a server call to the URL:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${CATEGORY}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+● The CATEGORY is the end-point and can contain all kinds of parameters for
 
-### `npm test`
+example: sports, work, etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+● The App.js need to render photos from the data you received. The images display
+should be 3*3.
 
-### `npm run build`
+● Display only the first 9 elements from the array.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+● Create 2 Buttons. The first Button in the top-left with name “prev” and the second in
+the top-right with name “next”
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+● Use the node.js server to implement pagination and use it with adding a prev button
+which will replace the items by 9 backwards. And a next button, which will replace the
+items by 9 forward.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+● Add a button to the top-center of the screen. On press, the modal will appear and you
+will select the type of the photos, for example: animals, Sport, work etc.
 
-### `npm run eject`
+● When you select the type you need to make a server call and get the new data. The
+type should replace the end-point CATEGORY.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+● When you press on an item the modal will appear and will show the relevant
+parameters of the element such as: views, downloads, collection etc
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Nodejs:
 
-## Learn More
+● Create a node.js project with organized and understandable architecture.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+● Use express.js to build rest api.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+● Add few routes which contains the requests to pixabay api with:
 
-### Code Splitting
+○ Sorting function on the images by id or date.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+○ Pagination function according to the client side requirements.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+● Keep efficient and clean code, use error handling and documentation with comments.
